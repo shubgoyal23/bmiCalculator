@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="/bmiCalculator/style.css">
+    <script defer src="/bmiCalculator/app.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>BMI Calculator</h1>
+        <form action="" class="bmiInputs">
+            <div>
+                <label for="weight">Weight in Kg</label>
+                <input type="text" placeholder="Weight in Kg" id="weight" required>
+            </div>
+            <div>
+                <label for="foot"> Height</label>
+                <select id="foot">
+                    <option value="foot" disabled selected>foot</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </select>
+                <select id="inch">
+                    <option value="inch" disabled selected>Inch</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                </select>
+            </div>
+            <button class="submit">submit</button>
+        </form>
+        <div class="displayBmi"></div>
+        <div class="table-container hidden">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td class="head">Classification</td>
+                        <td class="head">BMI range - kg/m<sup>2</sup></td>
+                    </tr>
+                    <tr class="table-row-1">
+                        <td>Severe Thinness</td>
+                        <td class="td-center">&lt; 16</td>
+                    </tr>
+                    <tr class="table-row-2">
+                        <td>Moderate Thinness</td>
+                        <td class="td-center">16 - 17</td>
+                    </tr>
+                    <tr class="table-row-1">
+                        <td>Mild Thinness</td>
+                        <td class="td-center">17 - 18.5</td>
+                    </tr>
+                    <tr class="table-row-2">
+                        <td>Normal</td>
+                        <td class="td-center">18.5 - 25</td>
+                    </tr>
+                    <tr class="table-row-1">
+                        <td>Overweight</td>
+                        <td class="td-center">25 - 30</td>
+                    </tr>
+                    <tr class="table-row-2">
+                        <td>Obese Class I</td>
+                        <td class="td-center">30 - 35</td>
+                    </tr>
+                    <tr class="table-row-1">
+                        <td>Obese Class II</td>
+                        <td class="td-center">35 - 40</td>
+                    </tr>
+                    <tr class="table-row-2">
+                        <td>Obese Class III</td>
+                        <td class="td-center">&gt; 40</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    
+</body>
+
+</html>

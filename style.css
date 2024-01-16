@@ -1,0 +1,129 @@
+body{
+    background-color: rgb(205, 218, 236);
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    background-color: #f3ecdb;
+    border: 2px solid #b8860b;
+    border-radius: 6px;
+    padding: 1rem;
+    text-align: center;
+    display: grid;
+    width: 400px;
+    max-width: 95%;
+    margin: auto;
+    box-sizing: border-box;
+}
+.container h1{
+    color: #b8860b;
+    font-size: 2.5rem;
+    text-decoration: underline;
+}
+.container input{
+    width: 80%;
+    height: 45px;
+    border-radius: 10px;
+    background-color: #e0ffff;
+    padding-left: 15px;
+    color: black;
+    border: 1px solid gray;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+
+}
+.container button{
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(10, 129, 129);
+    padding-left: 15px;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(29, 28, 28);
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+
+}
+.container label {
+    width: 50%;
+    display: block;
+    margin: 0.5rem auto;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.container select {
+    box-sizing: border-box;
+    width: 40%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #e0ffff;
+    padding-left: 15px;
+    color: black;
+    border: 1px solid gray;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    
+
+}
+.hidden{
+    display: none;
+}
+
+.container button:hover, select:hover, input:hover{
+    transform: translateY(-2px);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media screen and (max-width: 420px) {
+    body{
+        align-items: start;
+    }
+    .container{
+        margin-top: 2.5rem;
+    }
+}
+.table-container{
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.table-container .table{
+    border-collapse: collapse;
+}
+.table td{
+    border: 1px solid black;
+    width: max-content;
+    padding: 0.1rem 1rem 0.1rem 0.2rem;
+    text-align: left;
+}
+.head{
+   background-color: #336699;
+}
+.table-row-1{
+    background-color: #fff;
+}
+.table-row-2{
+    background-color: #eee;
+}
+.td-center{
+    text-align: center !important;
+}
+
+#show-table{
+    width: fit-content;
+    height: 30px;
+    border-radius: 5px;
+    background-color:transparent;
+    padding-left: 15px;
+    color: darkgoldenrod;
+    border: 1px solid darkgoldenrod;
+    font-size: 0.8rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
